@@ -107,13 +107,6 @@ The following numbers are taken from the paper's main comparison table. Both Rep
 | Causal Forcing++ | 84.10 | 84.94 | 80.75 | 71 | 6.798 | 47 |
 | **RepForcing** | **84.38** | **85.67** | 79.21 | **78** | **10.598** | **80** |
 
-**Evaluation protocol:**
-
-- VBench Total, Quality, and Semantic use standard VBench prompts. The separate Dynamic Degree, VisionReward, and Instruction Following evaluations use Causal Forcing's 100-prompt motion set, with scores multiplied by 100 as in the paper.
-- Instruction Following measures prompt alignment using VisionReward; it is not human-study accuracy. VisionReward values are not accuracy percentages either.
-- Most baseline scores follow the Causal Forcing report. Frame-wise Causal Forcing++ scores come from its report, and Causal-rCM scores come from pretrained-weight evaluations. This is **not a controlled retraining comparison under a common training budget**.
-- Bold marks the highest value in each column within a group. RepForcing does not lead every metric. These reported results do not establish that this repository has reproduced them end to end.
-
 <a id="quick-start"></a>
 ## Quick Start
 
