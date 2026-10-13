@@ -1,0 +1,25 @@
+# Install a mutually compatible PyTorch/torchvision pair for your CUDA driver first.
+# Causal attention uses torch.nn.attention.flex_attention.
+torch>=2.5.0
+torchvision>=0.20.0
+diffusers==0.31.0
+transformers>=4.49.0,<5
+tokenizers>=0.20.3
+accelerate>=1.1.1
+numpy>=1.24.4,<2
+omegaconf>=2.3.0
+ml_collections>=1.0.0
+wandb
+lmdb
+einops
+easydict
+ftfy
+sentencepiece
+huggingface_hub
+Pillow
+tqdm
+imageio
+imageio-ffmpeg
+av==13.1.0
+opencv-python>=4.9.0.80
+ninja

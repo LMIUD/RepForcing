@@ -1,0 +1,22 @@
+{
+  "repository": "https://github.com/zai-org/VisionReward",
+  "commit": "511960d61a777b2008cd486a85a090ba96792a32",
+  "files": {
+    "questions.txt": {
+      "path": "VisionReward_Video/VisionReward_video_qa_select.txt",
+      "sha256": "79de7f5e135a7957144826056a83be63fd6ddcbc61ba6460e09a0b09da580ee3"
+    },
+    "all_questions.txt": {
+      "path": "VisionReward_Video/VisionReward_video_qa.txt",
+      "sha256": "58de7e00beb91aebfdf8043cce9f6780dd6609ad855d80be6f505e8885a70c2a"
+    },
+    "weights.json": {
+      "path": "VisionReward_Video/weight.json",
+      "sha256": "0c6367f244ae64fa881e93f0033f2a4362176893ed2f946223ec64a57e3c9204"
+    },
+    "LICENSE": {
+      "path": "LICENSE",
+      "sha256": "530f0ed2f7134965529457ec3d16400a508ebe6ae5400f445299f2fe26c048b3"
+    }
+  }
+}

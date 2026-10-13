@@ -1,0 +1,69 @@
+# Local configuration and credentials
+.env
+.env.*
+*.key
+*.pem
+/repforcing_deploy.key*
+/ssh_key.txt
+*token.txt
+settings.local.json
+
+# Python environments, caches and build artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.venv/
+venv/
+envs/
+build/
+dist/
+
+# Models and training data
+/wan_models/
+/checkpoints/
+/dataset/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.mdb
+*.lmdb
+*.npy
+*.npz
+
+# Runtime outputs, reports and media
+/logs/
+/output/
+/outputs/
+/results/
+/vbench/results/
+wandb/
+*.log
+*.mp4
+*.webm
+*.gif
+*.png
+*.jpg
+*.jpeg
+*.pdf
+
+# Paper figures embedded in the README
+!/assets/teaser.png
+!/assets/pipeline.png
+
+# Private development state and external environments
+.claude/
+.joycode/
+CLAUDE.md
+/bake/
+/paper/
+/case/
+/comparison/
+/pipeline_fig/
+/vbench/pydeps/
+.DS_Store
