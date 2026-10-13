@@ -115,11 +115,3 @@ Protocol rules:
 - The manifest also records the scoring script's SHA-256. Editing the script, including its comments, invalidates an older run's resume manifest. Use a new output directory rather than bypassing the check.
 
 `vbench/scripts/vision_reward/weights.json` contains **29 scoring coefficients**, not neural-network weights. It is retained with the question files, `source.json`, and `LICENSE` to verify protocol provenance and file hashes.
-
-## Tests Without Model Weights
-
-```bash
-PYTHONDONTWRITEBYTECODE=1 python -B vbench/scripts/test_score_vision_reward.py
-```
-
-These tests cover the protocol, answer mapping, input correspondence, and resume validation. They do not validate real model outputs or a full GPU evaluation.

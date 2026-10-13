@@ -41,7 +41,7 @@ The paper reports that, after DMD, the **four-step chunk-wise** model improves V
   - [Stage 1: RFT Initialization](#stage-1)
   - [Stage 2: Asymmetric DMD](#stage-2)
   - [Logging and Distributed Execution](#logging)
-- [Evaluation and Tests](#evaluation)
+- [Evaluation](#evaluation)
 - [Acknowledgements and License](#acknowledgements)
 
 <a id="overview"></a>
@@ -334,21 +334,9 @@ Use DMD checkpoints for four-step inference. The presence of `generator_ema` dep
 Unless specified, `--wandb-save-dir` uses the resolved log directory. Configuration exports filter authentication fields but still contain local model, data, and log paths; inspect them before sharing.
 
 <a id="evaluation"></a>
-## Evaluation and Tests
+## Evaluation
 
 See **[VBench, Dynamic Degree, and VisionReward](vbench/README.md)** for evaluation commands and dependencies. Standard VBench and the separate 100-prompt evaluations have different input naming and aggregation protocols; do not mix them.
-
-<details>
-<summary><strong>CPU tests without model weights</strong></summary>
-
-```bash
-PYTHONDONTWRITEBYTECODE=1 python -B -m unittest discover -s tests -v
-PYTHONDONTWRITEBYTECODE=1 python -B vbench/scripts/test_score_vision_reward.py
-```
-
-Tests cover configurations, entry points, training control, synthetic LMDB conversion, and scoring protocols. GPU models are mocked and test data is created in temporary directories. These tests do not validate model quality, full GPU evaluation, or hardware compatibility in a new environment.
-
-</details>
 
 <a id="acknowledgements"></a>
 ## Acknowledgements and License
